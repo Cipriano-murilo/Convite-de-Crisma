@@ -11,3 +11,14 @@ btnNao.addEventListener('mouseover', () => {
   btnNao.style.left = novaPosX + 'px';
   btnNao.style.top = novaPosY + 'px';
 });
+
+function enviarMensagemWhatsApp() {
+  const numero = '5527992520209';
+  const mensagem = "Siiim! 😍 Eu aceito ser sua madrinha! 💖";
+  const url = `https://wa.me/${numero}?text=${encodeURIComponent(mensagem)}`;
+  window.open(url, '_blank');
+
+  setTimeout(() => {
+    window.location.href = 'fotos.html';
+  }, 1000);
+}
